@@ -1,37 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>About us</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    </head>
-    <body>
-        <header>
-          
-            <h1>About our work with Read the Stars</h1>
-
+<html>
+<header>
             <div class="header">
-  <h1>Header</h1>
-  <p>Who is who?</p>
+  <h1>About us</h1>
+  <p>Making an algorithm in ten days for the first time without even knowing your teammates</p>
 </div>
             <h1>How we worked with Read the Stars</h1>
          </header>
-         <nav>
-        
-            <a href="index.html">Back</a>
-        </nav>
-        <main>
-            <article>
-                <h1>Home</h1>
+    <head>
+        <title>How we did this</title>
+    </head>
+    <body>We started out with Emmas' idea about an algorithm to help people find books about their Zodiac sign, and also some books about all Zodiac signs. We quickly decided to go with the idea, since it would make the rest of tha task easier. We started out by creating a Google spreadsheet to collect data, we're all of us contributed. Later on we decided to split up the workload, but of course to help out were we were needed. To keep track of everything Emma started a project plan in the common Google-file, were we listed our individual contributions. We started early on a new repository at GitHub, to be able to help each other out during the project.</body>
 
-                <img src="sandy592/readthestars/docs/img/Stjärnbilder/512px-Scorpio_zodiac_sign_symbol.svg.png" class="course-logo" alt="Datalogical Thinking Logo."/>
-                <p>
-                    This is how we worked with this project. Algorithm being released in late October means this webpage is a Scorpio.
-=======
-                <img> src="512px-Scorpio_zodiac_sign_symbol.svg.png"</img>
-                <p. 
->>>>>>> 2647eafba59d6410f65669d7ce42287bf37aa687
-                </p>
-            </article>
-          
+
+Emma: Algorithm, algorithm.htlm
+Gabriella: web design, index.htlm
+Johanna: CSV-maker, dataset.htlm
+Sandra: Documenting, people.htlm
+Sara: Tables, web site
+
 </html>
+
