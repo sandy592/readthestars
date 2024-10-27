@@ -7,26 +7,23 @@
     </head>
     <body>
         <header>
-            <!-- add a header, and format with CSS -->
-<<<<<<< HEAD
+          
             <h1>About our work with Read the Stars</h1>
-=======
+
             <div class="header">
   <h1>Header</h1>
   <p>Who is who?</p>
 </div>
             <h1>How we worked with Read the Stars</h1>
->>>>>>> 2647eafba59d6410f65669d7ce42287bf37aa687
          </header>
          <nav>
-            <!-- add links web other pages, and format the navbar with CSS-->
-            <!-- see 'Making a Horizontal Menu in HTML and CSS' in the course materials-->
-            <a href="people.html">Home</a>
+        
+            <a href="index.html">Back</a>
         </nav>
         <main>
             <article>
                 <h1>Home</h1>
-<<<<<<< HEAD
+
                 <img src="sandy592/readthestars/docs/img/Stjärnbilder/512px-Scorpio_zodiac_sign_symbol.svg.png" class="course-logo" alt="Datalogical Thinking Logo."/>
                 <p>
                     This is how we worked with this project. Algorithm being released in late October means this webpage is a Scorpio.
@@ -38,4 +35,3 @@
             </article>
           
 </html>
-
