@@ -43,25 +43,36 @@
          </footer>
     </body>
 </html><!DOCTYPE html>
-<html>
-<header>
-            <div class="header">
-  <h1>About us</h1>
-  <p>Making an algorithm in ten days for the first time without even knowing your teammates</p>
-</div>
-            <h1>How we worked with Read the Stars</h1>
-         </header>
+
+
+?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>How we did this</title>
+        <title>About us</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
     </head>
-    <body>We started out with Emmas' idea about an algorithm to help people find books about their Zodiac sign, and also some books about all Zodiac signs. We quickly decided to go with the idea, since it would make the rest of tha task easier. We started out by creating a Google spreadsheet to collect data, we're all of us contributed. Later on we decided to split up the workload, but of course to help out were we were needed. To keep track of everything Emma started a project plan in the common Google-file, were we listed our individual contributions. We started early on a new repository at GitHub, to be able to help each other out during the project.</body>
+    <body>
+        <article>
+        <h1>We made this algorithm together</h1>
+        <p>
+            Get to know us!. 
+        </p>
+        </article>
+        <body>We started out with Emmas' idea about an algorithm to help people find books about their Zodiac sign, and also some books about all Zodiac signs. We quickly decided to go with the idea, since it would make the rest of tha task easier. We started out by creating a Google spreadsheet to collect data, we're all of us contributed. Later on we decided to split up the workload, but of course to help out were we were needed. To keep track of everything Emma started a project plan in the common Google-file, were we listed our individual contributions. We started early on a new repository at GitHub, to be able to help each other out during the project.</body>
 
+        <article>
+        <h2>; About our work division</h2>
+        <ul>
+            <li>Emma: Algorithm, algorithm.htlm</li>
+            <li>Gabriella: web design, index.htlm</li>
+            <li>Johanna: CSV-maker, dataset.htlm</li>
+            <li>Sandra: Documenting, people.htlm</li>
+            <li>Sara: Tables, web site, index.htlm</li>
 
-Emma: Algorithm, algorithm.htlm
-Gabriella: web design, index.htlm
-Johanna: CSV-maker, dataset.htlm
-Sandra: Documenting, people.htlm
-Sara: Tables, web site
-
+        </ul>
+        </article>
+    </body>
 </html>
+
 
