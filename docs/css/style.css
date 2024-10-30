@@ -1,11 +1,11 @@
 /* Feel free to change me and make me your own! */
 
 body {
-  background-color: #7ae5ef; 
   font-family: Georgia, serif; 
+  color: white;
   background-image: url('himmel1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 article {
