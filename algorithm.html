@@ -29,51 +29,71 @@ The pseudocode is 50 lines long and includes everything required by the task, su
 Once the pseudocode was written, we attempted to implement it using Python, as this was covered in our lecture. It wasn’t easy to get the solution right, but after some research, we managed to do it. Initially, we thought the user would enter their birth date, but we later decided that the user would only need to enter their zodiac sign to get their result.
     </p>
 </article>
-   <article>
- <h2>Workflow for Read the Stars</h2>
-<ul>
-<li>1)  Idea: to get book recommendations about a Zodiac sign plus four books about all the Zodiac signs</li>
-<li>2)  Questions we discussed: Should the books be available at a Swedish library? Or available anywhere? Does it matter what language they're in? What information do we want?</li>  
-<li>3)  Create database in Google Spreadsheet (convenience choice): There are 12 Zodiac signs, we wanted 4 books about every sign and another 4 books about all the signs.</li> 
-<li>4)  We decided to include this information from Libris: title, author, isbn, link (to Libris), year, language, publisher, sign and element.</li>
-<li>5)  Everyone collected data from Libris.</li> 
-<li>6)  GitHub repository up, using the template proposed in the course.</li> 
-<li>7)  Figure out GitHub!</li>
-<li>8)  Perhaps we should skip publisher and language?</li> 
-<li>9)  Created pages in GitHub.</li> 
-<li>10) Linked tables (author-book) (sign-book) etc.</li>
-<li>11) Fix relations between tables.</li> 
-<li>12) Question: What skall we call the genral books on all the signs? "All".</li> 
-<li>13) Questions: Should the user pick a date and then get recommendations or should the user pick their sign? We decided on the latter. A chart with dates will be provided on the website.</li> 
-<li>14) Skip publisher and language!</li>
-<li>15) Curate dataset.</li>
-<li>16) Add texts to pages.</li>
-<li>17) Write algorithm in pseudocode.</li> 
-<li>18) No, let’s change it to one randomly selected book instead of all four books about all Zodiac signs.</li>
-<li>19) Rewrite pseudocode.</li>
-<li>20) Curate dataset again.</li> 
-<li>21) Question: How about a picture next to the search result? No, pictures elsewhere. </li>
-<li>22) Pictures with CC0-licences added to the repository.</li>   
-<li>23) Algorithm in pseudocode rewritten – add year (of the book).</li>
-<li>24) Algorithm in python - works for some of us</li>
-<li>25) Testing – not working if you copy from Google drive, try Sublime text = success!</li>
-<li>26) Curate data again to remove some information.</li> 
-<li>27) Create csv-file. </li>
-<li>28) Should we have some colors? Why not!</li>
-<li>29) Accidently delete folder.</li> 
-<li>30) Eventually find out how to create a new folder. </li>
-<li>31) How much should we write about ourselves? Sign, occupation, favourite algorithm. Given name is enough on the web site.</li>
-<li>32) Trim pseudocode.</li>
-<li>33) Put everything together on GitHub.</li>
-<li>34) Question: Did anyone remember that thing with quotation-marks in csv?</li>
-<li>35) Add more images.</li>
-<li>36) Translate pseudocode from Swedish to English.</li>
-<li>37) Fix and polish.</li>
-<li>38) An algorithm is born late in October, so Read the Stars is a Scorpio. All members of Group 2 are proud.</li>
 
-</ul>
 
-</article>     
+ </article>     
+
+ <article> 
+    <h2>The algorithm in pseudocode</h2>
+<pre>
+    
+    Start the Program
+	1	Create a function that takes a zodiac sign from the user:
+		Create a list of zodiac signs, each with its element and associated book recommendations.
+	2	For each zodiac sign in the list, include:
+	    The element associated with the zodiac sign:
+		Example: “Aries” has the element “Fire”, “Taurus” has “Earth”, “Gemini” has “Air”, etc.
+	3	Add four book recommendations for each zodiac sign:
+		Each book should include the following information:
+		The title of the book
+		ISBN number
+		Author’s name
+		Publication year (if available)
+		A link to Libris where the user can find the book
+	4	In the function, check if the user’s zodiac sign is in the list:
+		If the zodiac sign is found, return its element and list of books
+		If the zodiac sign is not found, return an empty list and a message about the invalid sign
+	5	Create a separate function to handle books about all zodiac signs together:
+		Make a list of four books that cover the entire zodiac or astrology in general.
+	6	For each book in the list about all zodiac signs, save the following information:
+		Title of the book
+		ISBN number
+		Author’s name
+		A link to Libris where the user can read more about the book
+	7	In the function for all zodiac signs, randomly select a book from the list each time the function is used:
+		Return the randomly selected book and its information
+	8	Create the main function that runs the program:
+		Ask the user to enter their zodiac sign (e.g., “Aries”, “Taurus”, “Gemini”)
+	9	Use the first function to find the element and books for the zodiac sign the user entered:
+		If an element and a list of books are found, proceed to step 10.
+		If no element is found, go to step 12.
+	10	If an element and a book list are found:
+		Display the element associated with the user’s zodiac sign (e.g., “Fire” for Aries)
+	11	For each book in the book list, print the book’s information:
+		Print the title of the book
+		Print the ISBN number
+		Print the author’s name
+		Print the publication year if available
+		Print a link to Libris to find the book
+	12	If the zodiac sign is not in the list:
+		Display a message informing the user that the zodiac sign is invalid
+		Ask the user to enter a valid zodiac sign
+	13	Use the function to randomly select a book about all zodiac signs:
+		Randomly select a book from the list of books about the entire zodiac or astrology in general
+	14	Display information about the randomly selected book about all zodiac signs:
+		Print the book’s title
+		Print the ISBN number
+		Print the author’s name
+		Print a link to Libris where the user can read more about the book
+	15	Run the main function to start the program.
+	16	End the program.
+	Program ends. 
+
+
+</pre>
+
+</article>   
+
    
 </body>
 </html>
