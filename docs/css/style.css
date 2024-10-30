@@ -6,7 +6,6 @@ body {
   background-image: url('himmel1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 70%;
   margin: auto;
 }
 
@@ -17,6 +16,7 @@ article {
 
 h1 {
   font-size: 48px; 
+  text-align-last: center;
 }
 
 h2 {
@@ -30,12 +30,14 @@ p {
 ul {
   font-size: 20px; 
   list-style-type: square; 
+  
 }
 .nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #dddddd;
 }
 
 li {
@@ -45,7 +47,6 @@ li {
 li a {
   display: block;
   padding: 8px;
-  background-color: #dddddd;
 }
 
 code {
