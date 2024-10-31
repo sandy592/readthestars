@@ -100,99 +100,99 @@ Once the pseudocode was written, we attempted to implement it using Python, as t
 	<pre>
 import random
 
-# Function to decide an element and specific books based on a zodiac sign
+# Funktion för att bestämma element och specifika böcker baserat på stjärntecken
 def get_element_and_books(zodiac_sign):
     elements_and_books = {
         "Aries": ("Fire", [
-            {"title": "Stjärntecknen talar om vem du är - väduren", "isbn": "9789153432111", "author": "Gisela Melin", "year": 2009, "link": "http://libris.kb.se/bib/10813515"},
-            {"title": "Väduren", "isbn": "9789150930122", "author": "Karmel Nair", "year": 2017, "link": "http://libris.kb.se/bib/21991157"},
-            {"title": "Väduren", "isbn": "9789185449576", "author": "Emilie Josephson", "year": 2006, "link": "http://libris.kb.se/bib/10572716?vw=full"},
-            {"title": "Väduren - en guide till ditt astrologiska liv", "isbn": "9789180376754", "author": "Stella Andromeda", "year": 2021, "link": "http://libris.kb.se/bib/p544ntlxmgjt3n1t"}
+            {"title": "Stjärntecknen talar om vem du är - väduren", "isbn": "9789153432111", "author": "Gisela Melin", "year": 2008, "link": "http://libris.kb.se/bib/10813515"},
+            {"title": "Väduren", "isbn": "9789150930122", "author": "Karmel Nair", "year": 2016, "link": "http://libris.kb.se/bib/21991157"},
+            {"title": "Väduren", "isbn": "9789185449576", "author": "Emilie Josephson", "year": 2007, "link": "http://libris.kb.se/bib/10572716?vw=full"},
+            {"title": "Väduren - en guide till ditt astrologiska liv", "isbn": "9789180376754", "author": "Stella Andromeda", "year": 2023, "link": "http://libris.kb.se/bib/p544ntlxmgjt3n1t"}
         ]),
         "Taurus": ("Earth", [
-            {"title": "En bok i solens och månens tecken", "isbn": "9132320310", "author": "Julia Parker", "year": 1998, "link": "http://libris.kb.se/bib/2154009"},
-            {"title": "Oxen", "isbn": "91638138315100", "author": "Richard Craze", "year": 2001, "link": "http://libris.kb.se/bib/7457609?vw=full"},
-            {"title": "Oxen - översteprästens bok", "isbn": "9789150917031", "author": "Karmel Nair", "year": 2018, "link": "http://libris.kb.se/bib/18716019"},
-            {"title": "Sådan är du - stjärntecknen berättar", "isbn": "9132425333", "author": "Ann Petrie", "year": 1995, "link": "http://libris.kb.se/bib/526764"}
+            {"title": "En bok i solens och månens tecken", "isbn": "9132320310", "author": "Julia Parker", "year": 1996, "link": "http://libris.kb.se/bib/2154009"},
+            {"title": "Oxen", "isbn": "91638138315100", "author": "Richard Craze", "year": 1999, "link": "http://libris.kb.se/bib/7457609?vw=full"},
+            {"title": "Oxen - översteprästens bok", "isbn": "9789150917031", "author": "Karmel Nair", "year": 2016, "link": "http://libris.kb.se/bib/18716019"},
+            {"title": "Sådan är du - stjärntecknen berättar", "isbn": "9132425333", "author": "Ann Petrie", "year": 1985, "link": "http://libris.kb.se/bib/526764"}
         ]),
         "Gemini": ("Air", [
-            {"title": "Tvillingarna", "isbn": "9789164063229", "author": "Dadhichi Toth", "year": 2002, "link": "http://libris.kb.se/bib/11731506"},
-            {"title": "Tvillingarna - en guide till ditt astrologiska liv", "isbn": "9789180376778", "author": "Stella Andromeda", "year": 2021, "link": "http://libris.kb.se/bib/m322lrfpk0r8ffsx"},
+            {"title": "Tvillingarna", "isbn": "9789164063229", "author": "Dadhichi Toth", "year": 2009, "link": "http://libris.kb.se/bib/11731506"},
+            {"title": "Tvillingarna - en guide till ditt astrologiska liv", "isbn": "9789180376778", "author": "Stella Andromeda", "year": 2023, "link": "http://libris.kb.se/bib/m322lrfpk0r8ffsx"},
             {"title": "Tvillingarna", "isbn": "9789150930146", "author": "Karmel Nair", "year": 2017, "link": "http://libris.kb.se/bib/21991185"},
-            {"title": "Stjärntecknen talar om vem du är", "isbn": "9789153432135", "author": "Gisela Melin", "year": 2009, "link": "http://libris.kb.se/bib/10813517"}
+            {"title": "Stjärntecknen talar om vem du är", "isbn": "9789153432135", "author": "Gisela Melin", "year": 2008, "link": "http://libris.kb.se/bib/10813517"}
         ]),
         "Cancer": ("Water", [
-            {"title": "Kräftan: en guide till ditt astrologiska liv", "isbn": "9789180376785", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/bsrr9g4p86pv2dbh?tab2=abs"},
-            {"title": "Stjärntecknen talar om vem du är: Kräftan", "isbn": "9789153432142", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10813518"},
-            {"title": "Soltecken: Kräftan", "isbn": "9179020895", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827317"},
-            {"title": "Bernces astrologiserie Kräftan", "isbn": "9146160108", "author": "Linda Goodman", "year": 1989, "link": "https://libris.kb.se/bib/1438558"}
+            {"title": "Kräftan: en guide till ditt astrologiska liv", "isbn": "9789180376785", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/bsrr9g4p86pv2dbh?tab2=abs"},
+            {"title": "Stjärntecknen talar om vem du är: Kräftan", "isbn": "9789153432142", "author": "Gisela Melin", "year": 2008, "link": "https://libris.kb.se/bib/10813518"},
+            {"title": "Soltecken: Kräftan", "isbn": "9179020895", "author": "Bernard Fitzwalter", "year": 1988, "link": "https://libris.kb.se/bib/827317"},
+            {"title": "Bernces astrologiserie Kräftan", "isbn": "9146160108", "author": "Linda Goodman", "year": 1991, "link": "https://libris.kb.se/bib/1438558"}
         ]),
         "Leo": ("Fire", [
-            {"title": "Lejonet: en guide till ditt astrologiska liv", "isbn": "9789180376792", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/r766qwkgp9p6vg9c"},
-            {"title": "Soltecken: Lejonet", "isbn": "9179020909", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827318"},
-            {"title": "Stjärntecknen talar om vem du är : lejonet", "isbn": "9789153432159", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10813519"},
-            {"title": "Bernces astrologiserie Lejonet", "isbn": "9780008589370", "author": "Linda Goodman", "year": 1989, "link": "https://libris.kb.se/bib/1438557"}
+            {"title": "Lejonet: en guide till ditt astrologiska liv", "isbn": "9789180376792", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/r766qwkgp9p6vg9c"},
+            {"title": "Soltecken: Lejonet", "isbn": "9179020909", "author": "Bernard Fitzwalter", "year": 1988, "link": "https://libris.kb.se/bib/827318"},
+            {"title": "Stjärntecknen talar om vem du är : lejonet", "isbn": "9789153432159", "author": "Gisela Melin", "year": 2008, "link": "https://libris.kb.se/bib/10813519"},
+            {"title": "Bernces astrologiserie Lejonet", "isbn": "9780008589370", "author": "Linda Goodman", "year": 1991, "link": "https://libris.kb.se/bib/1438557"}
         ]),
         "Virgo": ("Earth", [
-            {"title": "Jungfrun : en guide till ditt astrologiska liv", "isbn": "9789180376792", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/r766qwkgp9p6vg9c"},
-            {"title": "Stjärntecknen talar om vem du är: Jungfrun", "isbn": "9789153432166", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10813520"},
-            {"title": "Soltecken: Jungfrun", "isbn": "9179020917", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827319"},
-            {"title": "Bernces astrologiserie Jungfrun", "isbn": "9146159991", "author": "Linda Goodman", "year": 1989, "link": "https://libris.kb.se/bib/1438556"}
+            {"title": "Jungfrun : en guide till ditt astrologiska liv", "isbn": "9789180376792", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/r766qwkgp9p6vg9c"},
+            {"title": "Stjärntecknen talar om vem du är: Jungfrun", "isbn": "9789153432166", "author": "Gisela Melin", "year": 2008, "link": "https://libris.kb.se/bib/10813520"},
+            {"title": "Soltecken: Jungfrun", "isbn": "9179020917", "author": "Bernard Fitzwalter", "year": 1988, "link": "https://libris.kb.se/bib/827319"},
+            {"title": "Bernces astrologiserie Jungfrun", "isbn": "9146159991", "author": "Linda Goodman", "year": 1991, "link": "https://libris.kb.se/bib/1438556"}
         ]),
         "Libra": ("Air", [
-            {"title": "Stjärntecknen talar om vem du är: Vågen", "isbn": "9789153432173", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10813521"},
-            {"title": "Vågen : en guide till ditt astrologiska liv", "isbn": "9789180376815", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/xdftnvvrvhzz3szp"},
-            {"title": "Soltecken: Vågen", "isbn": "9179020801", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827308"},
-            {"title": "Vågen", "isbn": "9163813939", "author": "Richard Craze", "year": 2001, "link": "https://libris.kb.se/bib/7457617"}
+            {"title": "Stjärntecknen talar om vem du är: Vågen", "isbn": "9789153432173", "author": "Gisela Melin", "year": 2008, "link": "https://libris.kb.se/bib/10813521"},
+            {"title": "Vågen : en guide till ditt astrologiska liv", "isbn": "9789180376815", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/xdftnvvrvhzz3szp"},
+            {"title": "Soltecken: Vågen", "isbn": "9179020801", "author": "Bernard Fitzwalter", "year": 1988, "link": "https://libris.kb.se/bib/827308"},
+            {"title": "Vågen", "isbn": "9163813939", "author": "Richard Craze", "year": 1999, "link": "https://libris.kb.se/bib/7457617"}
         ]),
         "Scorpio": ("Water", [
-            {"title": "Skorpionen : en guide till ditt astrologiska liv", "isbn": "9789180376839", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/8qpp7d466swn43w8"},
-            {"title": "Stjärntecknen talar om vem du är: Skorpionen", "isbn": "9789153432180", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10813522"},
-            {"title": "Soltecken: Skorpionen", "isbn": "917902081X", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827309"},
-            {"title": "Skorpionen", "isbn": "9163813955", "author": "Richard Craze", "year": 2001, "link": "https://libris.kb.se/bib/7457618"}
+            {"title": "Skorpionen : en guide till ditt astrologiska liv", "isbn": "9789180376839", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/8qpp7d466swn43w8"},
+            {"title": "Stjärntecknen talar om vem du är: Skorpionen", "isbn": "9789153432180", "author": "Gisela Melin", "year": 2008, "link": "https://libris.kb.se/bib/10813522"},
+            {"title": "Soltecken: Skorpionen", "isbn": "917902081X", "author": "Bernard Fitzwalter", "year": 1988, "link": "https://libris.kb.se/bib/827309"},
+            {"title": "Skorpionen", "isbn": "9163813955", "author": "Richard Craze", "year": 1999, "link": "https://libris.kb.se/bib/7457618"}
         ]),
         "Sagittarius": ("Fire", [
-            {"title": "Stjärntecknen talar om vem du är: Skytten", "isbn": "9789153432197", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10813523"},
-            {"title": "Skytten : en guide till ditt astrologiska liv", "isbn": "9789180376846", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/j0zzhndvgwt42d1n"},
-            {"title": "Soltecken: Skytten", "isbn": "9179020828", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827310"},
-            {"title": "Skytten", "isbn": "9163813971", "author": "Richard Craze", "year": 2001, "link": "https://libris.kb.se/bib/7457619?tab2=subj"}
+            {"title": "Stjärntecknen talar om vem du är: Skytten", "isbn": "9789153432197", "author": "Gisela Melin", "year": 2008, "link": "https://libris.kb.se/bib/10813523"},
+            {"title": "Skytten : en guide till ditt astrologiska liv", "isbn": "9789180376846", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/j0zzhndvgwt42d1n"},
+            {"title": "Soltecken: Skytten", "isbn": "9179020828", "author": "Bernard Fitzwalter", "year": 1988, "link": "https://libris.kb.se/bib/827310"},
+            {"title": "Skytten", "isbn": "9163813971", "author": "Richard Craze", "year": 1999, "link": "https://libris.kb.se/bib/7457619?tab2=subj"}
         ]),
         "Capricorn": ("Earth", [
-            {"title": "Stenbocken : en guide till ditt astrologiska liv", "isbn": "9789180376723", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/0gffz4rqx3dvxkgl"},
-            {"title": "Stjärntecknen talar om vem du är : Stenbocken", "isbn": "9132435568", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10027498"},
-            {"title": "Bernces astrologiserie Stenbocken", "isbn": "9146159851", "author": "Linda Goodman", "year": 1989, "link": "https://libris.kb.se/bib/1438549"},
-            {"title": "Soltecken : Stenbocken", "isbn": "9179020836", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827311"}
+            {"title": "Stenbocken : en guide till ditt astrologiska liv", "isbn": "9789180376723", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/0gffz4rqx3dvxkgl"},
+            {"title": "Stjärntecknen talar om vem du är : Stenbocken", "isbn": "9132435568", "author": "Gisela Melin", "year": 2006, "link": "https://libris.kb.se/bib/10027498"},
+            {"title": "Bernces astrologiserie Stenbocken", "isbn": "9146159851", "author": "Linda Goodman", "year": 1991, "link": "https://libris.kb.se/bib/1438549"},
+            {"title": "Soltecken : Stenbocken", "isbn": "9179020836", "author": "Bernard Fitzwalter", "year": 1988, "link": "https://libris.kb.se/bib/827311"}
         ]),
         "Aquarius": ("Air", [
-            {"title": "Vattumannen : en guide till ditt astrologiska liv", "isbn": "9789180376730", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/vb99t0qgs2kkqw0r"},
-            {"title": "Stjärntecknen talar om vem du är : Vattumannen", "isbn": "9132435576", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10165874"},
-            {"title": "Bernces astrologiserie Vattumannen", "isbn": "9146159835", "author": "Linda Goodman", "year": 1989, "link": "https://libris.kb.se/bib/1438548"},
-            {"title": "Soltecken : Vattumannen", "isbn": "9179020844", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827312"}
+            {"title": "Vattumannen : en guide till ditt astrologiska liv", "isbn": "9789180376730", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/vb99t0qgs2kkqw0r"},
+            {"title": "Stjärntecknen talar om vem du är : Vattumannen", "isbn": "9132435576", "author": "Gisela Melin", "year": 2006, "link": "https://libris.kb.se/bib/10165874"},
+            {"title": "Bernces astrologiserie Vattumannen", "isbn": "9146159835", "author": "Linda Goodman", "year": 1991, "link": "https://libris.kb.se/bib/1438548"},
+            {"title": "Soltecken : Vattumannen", "isbn": "9179020844", "author": "Bernard Fitzwalter", "year": 1989, "link": "https://libris.kb.se/bib/827312"}
         ]),
         "Pisces": ("Water", [
-            {"title": "Fiskarna : en guide till ditt astrologiska liv", "isbn": "9789180376747", "author": "Stella Andromeda", "year": 2021, "link": "https://libris.kb.se/bib/vb99t0qrsbh9h83g"},
-            {"title": "Stjärntecknen talar om vem du är : Fiskarna", "isbn": "9789153432227", "author": "Gisela Melin", "year": 2009, "link": "https://libris.kb.se/bib/10813526"},
-            {"title": "Bernces astrologiserie Fiskarna", "isbn": "9146159916", "author": "Linda Goodman", "year": 1989, "link": "https://libris.kb.se/bib/1438552?vw=full"},
-            {"title": "Soltecken : Fiskarna", "isbn": "9179020852", "author": "Bernard Fitzwalter", "year": 2002, "link": "https://libris.kb.se/bib/827313"}
+            {"title": "Fiskarna : en guide till ditt astrologiska liv", "isbn": "9789180376747", "author": "Stella Andromeda", "year": 2023, "link": "https://libris.kb.se/bib/vb99t0qrsbh9h83g"},
+            {"title": "Stjärntecknen talar om vem du är : Fiskarna", "isbn": "9789153432227", "author": "Gisela Melin", "year": 2008, "link": "https://libris.kb.se/bib/10813526"},
+            {"title": "Bernces astrologiserie Fiskarna", "isbn": "9146159916", "author": "Linda Goodman", "year": 1992, "link": "https://libris.kb.se/bib/1438552?vw=full"},
+            {"title": "Soltecken : Fiskarna", "isbn": "9179020852", "author": "Bernard Fitzwalter", "year": 1989, "link": "https://libris.kb.se/bib/827313"}
         ])
     }
     return elements_and_books.get(zodiac_sign, (None, []))
 
-# Function to randomly select a book on all zodiac signs
+# Funktion för att slumpmässigt välja en bok om alla stjärntecken
 def get_random_all_zodiac_book():
     all_zodiac_books = [
-        {"title": "Astro poets: din guide till zodiaken", "isbn": "9789113105925", "author": "Alex Dimitrov", "link": "http://libris.kb.se/bib/v611pm64st016twv"},
-        {"title": "Zodiaken - måla ditt stjärntecken : närvaro, fokus, balans", "isbn": "9789187941634", "author": "Stella Björn", "link": "http://libris.kb.se/bib/18541670"},
-        {"title": "Zodiaken - hälsning från himlavalvet", "isbn": "9789187941634", "author": "Stella Björn", "link": "http://libris.kb.se/bib/18541672"},
-        {"title": "Mån-zodiaken och dess magiska trettonde tecken", "isbn": "9187242249", "author": "Joan Hodgson", "link": "http://libris.kb.se/bib/11678413"}
+        {"title": "Astro poets: din guide till zodiaken", "isbn": "9789113105925", "author": "Alex Dimitrov", "year": 2020, "link": "http://libris.kb.se/bib/v611pm64st016twv"},
+        {"title": "Zodiaken - måla ditt stjärntecken", "isbn": "9789187941634", "author": "Stella Björn", "year": 1970, "link": "http://libris.kb.se/bib/18541670"},
+        {"title": "Zodiaken - hälsning från himlavalvet", "isbn": "9789187941634", "author": "Stella Björn", "year": 2016, "link": "http://libris.kb.se/bib/18541672"},
+        {"title": "Mån-zodiaken och dess magiska trettonde tecken", "isbn": "9187242249", "author": "Joan Hodgson", "year": 1990, "link": "http://libris.kb.se/bib/11678413"}
     ]
     return random.choice(all_zodiac_books)
 
-# Function to ask user to provide a zodiac sign and return element and book recommendations
+# Funktion för att fråga användaren om stjärntecken och ge element och bokrekommendationer
 def main():
     zodiac_sign = input("Enter your zodiac sign (e.g., Aries, Taurus, Gemini): ").capitalize()
     
-    # Collect element and book recommendations
+    # Hämta element och böcker för stjärntecknet
     element, books = get_element_and_books(zodiac_sign)
     
     if element:
@@ -204,15 +204,16 @@ def main():
     else:
         print("Invalid zodiac sign. Please enter a valid zodiac sign.")
 
-    # Randomly select one book about all signs
+    # Slumpmässig bok om alla stjärntecken
     random_book = get_random_all_zodiac_book()
     print("\nAdditional book about all zodiac signs:")
-    print(f"- Title: {random_book['title']}, ISBN: {random_book['isbn']}, Author: {random_book['author']}")
+    print(f"- Title: {random_book['title']}, ISBN: {random_book['isbn']}, Author: {random_book['author']}, Year: {random_book['year']}")
     print(f"  Link: {random_book['link']}")
     
-# Run the programme
+# Starta programmet
 if __name__ == "__main__":
-    main()	
+    main()
+
 
 		</pre>
    </article>
