@@ -102,7 +102,7 @@ Once the pseudocode was written, we attempted to implement it using Python, as t
 	<pre>
 import random
 
-# Funktion för att bestämma element och specifika böcker baserat på stjärntecken
+# Function to determine the element and specific books based on the zodiac sign
 def get_element_and_books(zodiac_sign):
     elements_and_books = {
         "Aries": ("Fire", [
@@ -180,7 +180,7 @@ def get_element_and_books(zodiac_sign):
     }
     return elements_and_books.get(zodiac_sign, (None, []))
 
-# Funktion för att slumpmässigt välja en bok om alla stjärntecken
+# Function to randomly select a book about all zodiac signs
 def get_random_all_zodiac_book():
     all_zodiac_books = [
         {"title": "Astro poets: din guide till zodiaken", "isbn": "9789113105925", "author": "Alex Dimitrov", "year": 2020, "link": "http://libris.kb.se/bib/v611pm64st016twv"},
@@ -190,11 +190,11 @@ def get_random_all_zodiac_book():
     ]
     return random.choice(all_zodiac_books)
 
-# Funktion för att fråga användaren om stjärntecken och ge element och bokrekommendationer
+# Function to ask the user for their zodiac sign and provide element and book recommendations
 def main():
     zodiac_sign = input("Enter your zodiac sign (e.g., Aries, Taurus, Gemini): ").capitalize()
     
-    # Hämta element och böcker för stjärntecknet
+    # Retrieve element and books for the zodiac sign
     element, books = get_element_and_books(zodiac_sign)
     
     if element:
@@ -206,16 +206,15 @@ def main():
     else:
         print("Invalid zodiac sign. Please enter a valid zodiac sign.")
 
-    # Slumpmässig bok om alla stjärntecken
+    # Random book about all zodiac signs
     random_book = get_random_all_zodiac_book()
     print("\nAdditional book about all zodiac signs:")
     print(f"- Title: {random_book['title']}, ISBN: {random_book['isbn']}, Author: {random_book['author']}, Year: {random_book['year']}")
     print(f"  Link: {random_book['link']}")
     
-# Starta programmet
+# Start the program
 if __name__ == "__main__":
     main()
-
 
 		</pre>
    </article>
