@@ -98,10 +98,9 @@ Once the pseudocode was written, we attempted to implement it using Python, as t
 <article>
 <h2>The algorithm in python</h2>	
 	<pre>
-		
 import random
 
-# Funktion för att bestämma element och specifika böcker baserat på stjärntecken
+# Function to decide an element and specific books based on a zodiac sign
 def get_element_and_books(zodiac_sign):
     elements_and_books = {
         "Aries": ("Fire", [
@@ -179,7 +178,7 @@ def get_element_and_books(zodiac_sign):
     }
     return elements_and_books.get(zodiac_sign, (None, []))
 
-# Funktion för att slumpmässigt välja en bok om alla stjärntecken
+# Function to randomly select a book on all zodiac signs
 def get_random_all_zodiac_book():
     all_zodiac_books = [
         {"title": "Astro poets: din guide till zodiaken", "isbn": "9789113105925", "author": "Alex Dimitrov", "link": "http://libris.kb.se/bib/v611pm64st016twv"},
@@ -189,11 +188,11 @@ def get_random_all_zodiac_book():
     ]
     return random.choice(all_zodiac_books)
 
-# Funktion för att fråga användaren om stjärntecken och ge element och bokrekommendationer
+# Function to ask user to provide a zodiac sign and return element and book recommendations
 def main():
     zodiac_sign = input("Enter your zodiac sign (e.g., Aries, Taurus, Gemini): ").capitalize()
     
-    # Hämta element och böcker för stjärntecknet
+    # Collect element and book recommendations
     element, books = get_element_and_books(zodiac_sign)
     
     if element:
@@ -205,15 +204,15 @@ def main():
     else:
         print("Invalid zodiac sign. Please enter a valid zodiac sign.")
 
-    # Slumpmässig bok om alla stjärntecken
+    # Randomly select one book about all signs
     random_book = get_random_all_zodiac_book()
     print("\nAdditional book about all zodiac signs:")
     print(f"- Title: {random_book['title']}, ISBN: {random_book['isbn']}, Author: {random_book['author']}")
     print(f"  Link: {random_book['link']}")
     
-# Starta programmet
+# Run the programme
 if __name__ == "__main__":
-    main()
+    main()	
 
 		</pre>
    </article>
