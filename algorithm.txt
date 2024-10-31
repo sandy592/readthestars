@@ -2,14 +2,14 @@ Start the Program
 	1	Create a function that takes a zodiac sign from the user:
 		Create a list of zodiac signs, each with its element and associated book recommendations.
 	2	For each zodiac sign in the list, include:
-	    The element associated with the zodiac sign:
+	    	The element associated with the zodiac sign:
 		Example: “Aries” has the element “Fire”, “Taurus” has “Earth”, “Gemini” has “Air”, etc.
 	3	Add four book recommendations for each zodiac sign:
 		Each book should include the following information:
 		The title of the book
 		ISBN number
 		Author’s name
-		Publication year (if available)
+		Publication year
 		A link to Libris where the user can find the book
 	4	In the function, check if the user’s zodiac sign is in the list:
 		If the zodiac sign is found, return its element and list of books
@@ -20,6 +20,7 @@ Start the Program
 		Title of the book
 		ISBN number
 		Author’s name
+		Publication year
 		A link to Libris where the user can read more about the book
 	7	In the function for all zodiac signs, randomly select a book from the list each time the function is used:
 		Return the randomly selected book and its information
@@ -34,7 +35,7 @@ Start the Program
 		Print the title of the book
 		Print the ISBN number
 		Print the author’s name
-		Print the publication year if available
+		Print the publication year
 		Print a link to Libris to find the book
 	12	If the zodiac sign is not in the list:
 		Display a message informing the user that the zodiac sign is invalid
@@ -45,6 +46,7 @@ Start the Program
 		Print the book’s title
 		Print the ISBN number
 		Print the author’s name
+		Publication year
 		Print a link to Libris where the user can read more about the book
 	15	Run the main function to start the program.
 	16	End the program.
